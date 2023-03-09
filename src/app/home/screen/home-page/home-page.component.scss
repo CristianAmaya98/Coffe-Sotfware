@@ -1,0 +1,40 @@
+.home {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  min-height: 95vh;
+
+  &__principal {
+    grid-column: 2 / 6;
+  }
+
+  &__subtitle {
+    margin-left: 2rem;
+  }
+
+  &__title {
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 900;
+  }
+
+  &__description {
+    font-weight: 400;
+  }
+}
+
+.menu {
+  grid-column: 1 / 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 38rem;
+  background-color: #ffffff;
+}
+
+.products {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3rem;
+}

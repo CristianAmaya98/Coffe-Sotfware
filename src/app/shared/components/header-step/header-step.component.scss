@@ -1,0 +1,46 @@
+.header-step {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  text-align: center;
+  margin: 2rem 5rem;
+
+  &__item {
+  }
+
+  &__title {
+  }
+
+  &__separador {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    height: 1rem;
+    background-color: rgb(253 190 37);
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+
+    &::after {
+      content: "";
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      right: -8px;
+      top: -4px;
+      border-radius: 1rem;
+      z-index: 1;
+      background-color: rgb(79 73 209);
+    }
+
+    &--start {
+      position: relative;
+      width: 5%;
+    }
+
+    &--end {
+      position: relative;
+      width: 100%;
+    }
+  }
+}

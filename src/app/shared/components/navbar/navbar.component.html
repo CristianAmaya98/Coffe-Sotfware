@@ -1,0 +1,8 @@
+<nav class="navegacion">
+
+  <div *ngFor="let item of itemsMenu" class="navegacion__item"> <!--navegacion__item--active-->
+    <img class="navegacion__icon" [src]="item.icon" alt="">
+    <span class="navegacion__texto">{{item.name}}</span>
+  </div>
+
+</nav>

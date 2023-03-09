@@ -1,0 +1,14 @@
+.menu {
+  &__contenedor-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    margin-right: 2rem;
+  }
+}
